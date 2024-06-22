@@ -1,8 +1,11 @@
 import React, { useRef } from "react";
 import { Tabs, TabList, Tab, Button } from "@chakra-ui/react";
+import {Link } from 'react-router-dom'
 
+ 
 function Header() {
   return (
+    
     <div
       style={{
         display: "flex",
@@ -33,6 +36,12 @@ function Header() {
             <Tab>
               <a href="#footer">Contact us</a>
             </Tab>
+            <Tab>
+            <Link to='/blog' >Blog</Link>
+            </Tab>
+            
+              
+            
           </TabList>
         </Tabs>
       </div>
